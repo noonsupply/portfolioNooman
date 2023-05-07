@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import Contags from '@/images/projets/Contags.jpeg'
-import Flavorites from '@/images/projets/Flavorites.jpeg'
+import Contags from '@/images/projets/Contags.png'
+import Flavorites from '@/images/projets/Flavorites.png'
 import Hackatweet from '@/images/projets/Hackatweet.jpeg'
 import Portfolio from '@/images/projets/Portfolio.jpeg'
 import Link from 'next/link'
@@ -10,15 +10,19 @@ import clsx from 'clsx'
 import {
   GitHubIcon,
 } from '@/components/SocialIcons'
+import ProjectDetail from '../components/ProjectDetail'
+import { Container } from '../components/Container'
+import { TypeAnimation } from 'react-type-animation';
+
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="flex text-sm font-medium transition group text-zinc-800 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="flex-none w-6 h-6 transition fill-zinc-500 group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -70,50 +74,29 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="Quelques projets réalisés"
-        intro="J'ai eu la chance de travailler sur de nombreux projets durant ma carrière, retrouvez ci-dessous quelques exemples d'application web ou mobile."
+        title={
+          <TypeAnimation sequence={[
+            'Quelques projets réalisés', // Types 'One'
+            1000,
+            'Des projets web et mobiles', // Types 'One'
+            1000, // Waits 1s // Types 'Three' without deleting 'Two'
+            () => {
+              console.log('Sequence completed'); // Place optional callbacks anywhere in the array
+            }
+          ]}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          style={{ fontSize: '1em', display: 'inline-block' }}>
+          </TypeAnimation>
+        }
       >
+        <h3 className='dark:text-zinc-100'>{"J'ai eu la chance de travailler sur de nombreux projets durant ma carrière, retrouvez ci-dessous quelques exemples d'application web ou mobile."}</h3>
+                <Container>
+        <ProjectDetail/>
+        </Container>
         <div >
-      <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8 lg:py-24 text-zinc-600 dark:text-zinc-200 dark: border-gray-100">
-        <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-          <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Mes Projets</h2>
-            <p className="text-xl text-white-500">
-              {"Voici quelques projets d'applications web & mobile réalisés"}
-            </p>
-          </div>
-          <div className="lg:col-span-2">
-            <ul
-              role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
-            >
-              {mesProjets.map((person) => (
-                <li key={person.name}>
-                  <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-2">
-                      <Image className="rounded-lg object-cover shadow-lg object-cover h-48 w-96"  src={person.imageUrl} alt="" />
-                    </div>
-                    <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3>{person.name}</h3>
-                      <p className="text-teal-600">{person.role}</p>
-                    </div>
-                    <div className="text-lg">
-                      <p className="text-white-500">{person.bio}</p>
-                    </div>
-                    <h1>
-                  <SocialLink target="_blank" href={person.gitLink} icon={GitHubIcon} className="mt-4">
-                Découvrez sur GitHub
-              </SocialLink>
-              </h1>
-                  </div>
-                  
-                </li>
-              ))}
-            </ul>
-            
-          </div>
-        </div>
-      </div>
+
     </div>
 
       </SimpleLayout>

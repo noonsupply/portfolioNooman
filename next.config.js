@@ -36,4 +36,7 @@ const customWebpackConfig = require('./webpack.config.js');
 module.exports = {
   ...withMDX(nextConfig),
   ...customWebpackConfig,
+  images: {
+    domains: ['tailwindui.com'],
+    },
 };
