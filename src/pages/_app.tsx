@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { DefaultSeo } from 'next-seo';
 
 
 import '@/styles/tailwind.css'
@@ -84,12 +85,20 @@ export default function App({ Component, pageProps, router }: MyAppProps) {
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Nooman Miled, développeur freelance spécialisé en Node.js, Next.js, MongoDB, Mongoose, React, React Native et Express à Lyon." />
-        <title>Nooman Miled - Développeur Freelance à Lyon</title>
-      </Head>
+      <DefaultSeo
+        title="Nooman Miled, Developpeur Freelance"
+        description="Nooman Miled, Freelance Développeur web & mobile à Lyon"
+        openGraph={{
+          type: 'website',
+          locale: 'fr_FR',
+          url: 'https://noomanmiled.com/',
+          site_name: 'Nooman Miled',
+        }}
+        twitter={{
+          handle: '@handle',
+          cardType: 'summary_large_image',
+        }}
+      />
       <div className="fixed inset-0 flex justify-center sm:px-8">
         <div className="flex w-full max-w-9xl lg:px-8">
           <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
