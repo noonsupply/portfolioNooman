@@ -1,22 +1,28 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { SimpleLayout } from '@/components/SimpleLayout'
-
+import { NextSeo } from 'next-seo';
 
 export default function Speaking() {
 
   return (
+    <>
+    <NextSeo
+      title="Contact"
+      description="Contactez-moi"
+    />
+    
     <SimpleLayout>
-    <div className="dark: border-gray-100">
-      <div className="mx-auto max-w-7xl py-16 px-6 sm:py-0 lg:px-8" >
-        <div className=" space-y-1 text-base text-zinc-600 dark:text-zinc-400 dark: border-gray-100 ">
+    <div className="border-gray-100 dark:">
+      <div className="px-6 py-16 mx-auto max-w-7xl sm:py-0 lg:px-8" >
+        <div className="space-y-1 text-base border-gray-100 text-zinc-600 dark:text-zinc-400 dark:">
           <h2 className="sr-only">Contact us</h2>
 
-          <div className=" text-base text-zinc-600 dark:text-zinc-400 grid grid-cols-1 lg:grid-cols-3 dark: border-gray-100">
+          <div className="grid grid-cols-1 text-base border-gray-100 text-zinc-600 dark:text-zinc-400 lg:grid-cols-3 dark:">
             {/* Contact information */}
-            <div className="relative overflow-hidden bg-teal-800 py-10 px-6 sm:px-10 xl:p-12">
-            <div className="pointer-events-none absolute inset-0 sm:hidden" aria-hidden="true">
+            <div className="relative px-6 py-10 overflow-hidden bg-teal-800 sm:px-10 xl:p-12">
+            <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
               <svg
-                  className="absolute inset-0 h-full w-full "
+                  className="absolute inset-0 w-full h-full "
                   width={343}
                   height={388}
                   viewBox="0 0 343 388"
@@ -45,11 +51,11 @@ export default function Speaking() {
                 </svg>
               </div>
               <div
-                className="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 sm:block lg:hidden"
+                className="absolute top-0 bottom-0 right-0 hidden w-1/2 pointer-events-none sm:block lg:hidden"
                 aria-hidden="true"
               >
                 <svg
-                  className="absolute inset-0 h-full w-full"
+                  className="absolute inset-0 w-full h-full"
                   width={359}
                   height={339}
                   viewBox="0 0 359 339"
@@ -78,11 +84,11 @@ export default function Speaking() {
                 </svg>
               </div>
               <div
-                className="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 lg:block "
+                className="absolute top-0 bottom-0 right-0 hidden w-1/2 pointer-events-none lg:block "
                 aria-hidden="true"
               >
                 <svg
-                  className="absolute inset-0 h-full w-full"
+                  className="absolute inset-0 w-full h-full"
                   width={160}
                   height={678}
                   viewBox="0 0 160 678"
@@ -111,24 +117,24 @@ export default function Speaking() {
                 </svg>
               </div>
               <h3 className="text-lg font-medium text-white">Contact</h3>
-              <p className="mt-6 max-w-3xl text-base text-indigo-50">{"Vous avez un projet ? N'hésitez pas à me contacter"}</p>
+              <p className="max-w-3xl mt-6 text-base text-indigo-50">{"Vous avez un projet ? N'hésitez pas à me contacter"}</p>
               <dl className="mt-8 space-y-6">
                 <dt>
-                  <span className="sr-only  text-zinc-200 dark:text-zinc-200">Téléphone</span>
+                  <span className="sr-only text-zinc-200 dark:text-zinc-200">Téléphone</span>
                 </dt>
                 <dd className="flex text-base text-indigo-50">
-                  <PhoneIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
+                  <PhoneIcon className="flex-shrink-0 w-6 h-6 text-indigo-200" aria-hidden="true" />
                   <span className="ml-3">+33 (0)7 66 00 70 71</span>
                 </dd>
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
                 <dd className="flex text-base text-indigo-50">
-                  <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-indigo-200" aria-hidden="true" />
+                  <EnvelopeIcon className="flex-shrink-0 w-6 h-6 text-indigo-200" aria-hidden="true" />
                   <span className="ml-3">contact@noomanmiled.com</span>
                 </dd>
               </dl>
-              <ul role="list" className="mt-8 flex space-x-12">
+              <ul role="list" className="flex mt-8 space-x-12">
                 <li>
                   <a className="text-indigo-200 hover:text-indigo-100" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nooman-miled">
                     <span className="sr-only">LinkedIn</span>
@@ -143,7 +149,7 @@ export default function Speaking() {
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
+                      className="w-6 h-6"
                       aria-hidden="true"
                     >
                       <path
@@ -158,7 +164,7 @@ export default function Speaking() {
 
             {/* Contact form */}
             <div className="items-center col-span-2">
-    <div className="max-w-md mx-auto w-auto p-10 shadow-sm">
+    <div className="w-auto max-w-md p-10 mx-auto shadow-sm">
       <div className="text-center">
         <h1
           className="text-3xl font-semibold text-gray-700 dark:text-gray-200"
@@ -245,7 +251,7 @@ export default function Speaking() {
           <div className="mb-6">
             <button
               type="submit"
-              className="w-full px-3 py-4 text-white bg-emerald-700 rounded-md focus:bg-emerald-500 focus:outline-none"
+              className="w-full px-3 py-4 text-white rounded-md bg-emerald-700 focus:bg-emerald-500 focus:outline-none"
             >
               Envoyer
             </button>
@@ -261,7 +267,7 @@ export default function Speaking() {
       </div>
     </div>
 </SimpleLayout>
-
+</>
   )
 }
 

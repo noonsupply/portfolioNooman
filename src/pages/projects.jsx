@@ -13,7 +13,7 @@ import {
 import ProjectDetail from '../components/ProjectDetail'
 import { Container } from '../components/Container'
 import { TypeAnimation } from 'react-type-animation';
-
+import { NextSeo } from 'next-seo';
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -66,6 +66,10 @@ export default function Projects() {
 
   return (
     <>
+    <NextSeo
+      title="Projets"
+      description="Mes réalisations"
+    />
       <Head>
         <title>Projets - Nooman Miled</title>
         <meta

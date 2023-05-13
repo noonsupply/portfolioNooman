@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { NextSeo } from 'next-seo';
+
 
 import { Container } from '@/components/Container'
 import {
@@ -38,14 +40,10 @@ function MailIcon(props) {
 export default function About() {
   return (
     <>
-      <Head>
-      <title>Développeur Web et Mobile Freelance à Lyon - Nooman Miled</title>
-      <meta
-    name="description"
-    content="Découvrez Nooman Miled, développeur web et mobile freelance à Lyon, spécialisé en React, React Native, Node.js, Express et MongoDB."
-  />
-
-      </Head>
+      <NextSeo
+        title="À propos de moi"
+        description="Apprenez-en plus sur notre entreprise."
+      />
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">

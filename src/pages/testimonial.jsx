@@ -1,5 +1,6 @@
 import {SimpleLayout} from "../components/SimpleLayout"
 import { Container } from '@/components/Container'
+import { NextSeo } from 'next-seo';
 
 const testimonials = [
     {
@@ -81,6 +82,11 @@ const testimonials = [
   
   export default function testimonial() {
     return (
+      <>      
+      <NextSeo
+      title="Recommandations"
+      description="Ce qu'on dit de moi"
+    />
         <SimpleLayout>
             
             <Container className="dark:border-gray-100 ">
@@ -114,6 +120,7 @@ const testimonials = [
     </div>
     </Container>
       </SimpleLayout>
+      </>
     )
   }
   
