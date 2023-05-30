@@ -124,7 +124,7 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/about">Accueil</MobileNavItem>
                 <MobileNavItem href="/projects">Projets</MobileNavItem>
                 <MobileNavItem href="/uses">Outils</MobileNavItem>
-                <MobileNavItem href="/testimonial">Recommandations</MobileNavItem>
+                <MobileNavItem href="/testimonial">Témoignages</MobileNavItem>
                 <MobileNavItem href="/speaking">Contact</MobileNavItem>
               </ul>
             </nav>
@@ -165,7 +165,7 @@ function DesktopNavigation(props) {
         <NavItem href="/about">Accueil</NavItem>
         <NavItem href="/projects">Projets</NavItem>
         <NavItem href="/uses">Compétences</NavItem>
-        <NavItem href="/testimonial">Recommandations</NavItem>
+        <NavItem href="/testimonial">Témoignages</NavItem>
         <NavItem href="/speaking">Contact</NavItem>
 
       </ul>
