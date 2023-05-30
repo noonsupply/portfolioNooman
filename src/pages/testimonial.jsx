@@ -84,8 +84,8 @@ const testimonials = [
     return (
       <>      
       <NextSeo
-      title="Recommandations"
-      description="Ce qu'on dit de moi"
+      title="Témoignage"
+      description="Découvrez comment j'ai aidé mes clients à réaliser leurs projets de développement web et mobile en tant que freelance. Consultez les témoignages de clients satisfaits et voyez par vous-même la qualité de mon travail."
     />
         <SimpleLayout>
             
@@ -94,7 +94,7 @@ const testimonials = [
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
       <div class="max-w-xl mx-auto text-center">
   <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-zinc-100 animate-fade-up">
-          {"Retours d'Expérience : Ce qu'on Dit de Moi"}
+          {"Retrouvez ci-dessous quelques témoignages"}
           </p>
         </div>
         <div className="flow-root max-w-2xl mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none">

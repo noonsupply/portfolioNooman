@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import { NextSeo } from 'next-seo';
 
 
+
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -40,9 +41,18 @@ function MailIcon(props) {
 export default function About() {
   return (
     <>
+          <Head>
+        <link rel="icon" href="/public/favicon.ico" />
+      </Head>
       <NextSeo
-        title="À propos de moi"
-        description="Apprenez-en plus sur notre entreprise."
+        title="Nooman Miled, Developpeur web et mobile freelance à Lyon"
+        description="Apprenez-en plus sur moi, votre développeur web et mobile freelance de confiance. Découvrez mon parcours, mes compétences et comment je peux aider à transformer votre vision en une réalité digitale efficace."
+        openGraph={{
+          type: 'website',
+          locale: 'fr_FR',
+          url: 'https://noomanmiled.com/',
+          site_name: 'Nooman Miled',
+        }}
       />
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">

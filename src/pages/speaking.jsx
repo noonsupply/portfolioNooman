@@ -7,8 +7,8 @@ export default function Speaking() {
   return (
     <>
     <NextSeo
-      title="Contact"
-      description="Contactez-moi"
+      title="Me contacter"
+      description="Contactez-moi pour discuter de vos besoins en développement web et mobile. En tant que développeur freelance expérimenté, je suis prêt à transformer vos idées en solutions digitales efficaces. N'hésitez pas à me joindre aujourd'hui pour un devis gratuit."
     />
     
     <SimpleLayout>

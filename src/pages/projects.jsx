@@ -31,44 +31,11 @@ function SocialLink({ className, href, children, icon: Icon }) {
 
 export default function Projects() {
 
-  const mesProjets = [
-    {
-      name: 'Hackatweet',
-      role: "#web Création d'une version light de Twitter",
-      imageUrl: Hackatweet,
-      bio: 'Technologies : React avec NextJS, Node, Mongoose',
-      gitLink: "https://github.com/noonsupply",
-    },
-  
-    {
-      name: 'Contags',
-      role: "#mobile Application de gestion des contacts",
-      imageUrl: Contags,
-      bio: 'Technologies : React Native avec Expo, Node, Mongoose',
-      gitLink: "https://github.com/noonsupply/contags-frontend",
-    },
-    {
-      name: 'Flavorites',
-      role: "#web Application de gestion des favoris",
-      imageUrl: Flavorites ,
-      bio: 'Technologies : React Native avec Expo, Node, Mongoose',
-      gitLink: "https://github.com/noonsupply/flavorites-frontend2",
-    },
-    {
-      name: 'Portfolio',
-      role: "#web Site portfolio sur lequel vous êtes 😅",
-      imageUrl: Portfolio ,
-      bio: 'Technologies : React avec NextJS, TailwindUI',
-      gitLink: "https://github.com/noonsupply/flavorites-frontend2",
-    },
-    
-  ]
-
   return (
     <>
     <NextSeo
-      title="Projets"
-      description="Mes réalisations"
+      title="Portfolio"
+      description="Explorez mon portfolio en tant que développeur web et mobile freelance. Découvrez comment j'ai aidé mes clients à réaliser leurs projets. Laissez mon travail témoigner de mon expertise."
     />
       <Head>
         <title>Projets - Nooman Miled</title>
