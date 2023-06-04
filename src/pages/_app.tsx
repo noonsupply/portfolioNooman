@@ -85,6 +85,9 @@ export default function App({ Component, pageProps, router }: MyAppProps) {
 
   return (
     <>
+    <Head>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
       <DefaultSeo
         title="Nooman Miled, Developpeur Freelance"
         description="Nooman Miled, Freelance Développeur web & mobile à Lyon"
