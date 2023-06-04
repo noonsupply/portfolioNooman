@@ -84,7 +84,7 @@ const testimonials = [
     return (
       <>      
       <NextSeo
-      title="Témoignage"
+      title="Témoignages"
       description="Découvrez comment j'ai aidé mes clients à réaliser leurs projets de développement web et mobile en tant que freelance. Consultez les témoignages de clients satisfaits et voyez par vous-même la qualité de mon travail."
     />
         <SimpleLayout>

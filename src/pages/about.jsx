@@ -81,7 +81,7 @@ export default function About() {
               {"Particulièrement axé sur les outils de productivité, avec un sens aigue pour l'ux et l'ui, j'ai à coeur d'offrir une excellente expérience utilisateur"}
               </p>
               <p>
-              {"J'ai eu la chance de travailler sur de nombreux projets stratégiques, ma vue d'ensemble et ma communication "}
+              {"J'ai eu la chance de travailler sur de nombreux projets stratégiques, ma vue d'ensemble et ma communication efficace ont toujours été des atouts majeurs pour coordonner les équipes et atteindre les objectifs fixés. "}
               </p>
               <p>
                 {"Ma gestion de projet efficace garantit que le travail est effectué dans les délais et dans les limites du budget. En bref, si vous cherchez un développeur qui est tout autant axé sur la qualité du produit que sur la satisfaction du client, vous êtes au bon endroit."}
