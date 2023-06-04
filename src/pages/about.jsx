@@ -47,6 +47,7 @@ export default function About() {
       <NextSeo
         title="Nooman Miled, Developpeur web et mobile freelance à Lyon"
         description="Apprenez-en plus sur moi, votre développeur web et mobile freelance de confiance. Découvrez mon parcours, mes compétences et comment je peux aider à transformer votre vision en une réalité digitale efficace."
+        canonical="https://noomanmiled.com/"
         openGraph={{
           type: 'website',
           locale: 'fr_FR',
@@ -68,22 +69,22 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Qui suis-je
+            Bienvenue !
             </h1>
             <div className="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
               <p>
-              {"Bonjour, je m'appelle Nooman Miled et je vis à Lyon."}<br></br>
+              {"Hello ! moi c'est Nooman, bienvenue sur mon site !"}<br></br>
               
-              {"Après une expérience de 20 ans dans le secteur du transport et de la logistique dans des fonctions bureau d'étude et projet, j'ai décidé de me reconvertir dans le développement web et mobile."}
+              {"Besoin de créer une application web et/ou mobile sur mesure ? confiez-moi votre projet"}
               </p>
               <p>
-              {"J'ai tout quitté pour suivre ma passion et devenir développeur. Mes compétences en gestion de projet sont un atout pour gérer les délais, la qualité et les budgets. Je suis motivé pour relever de nouveaux défis et je suis convaincu que mon expérience passée et mes compétences techniques me permetteront de concrétiser vos projets."}
+              {"Particulièrement axé sur les outils de productivité, avec un sens aigue pour l'ux et l'ui, j'ai à coeur d'offrir une excellente expérience utilisateur"}
               </p>
               <p>
-              {"Formé dans le bootcamp de La Capsule à Lyon, j'ai pu développer mes compétences tant sur la partie frontend que backend."}
+              {"J'ai eu la chance de travailler sur de nombreux projets stratégiques, ma vue d'ensemble et ma communication "}
               </p>
               <p>
-              {"Depuis la validation de mon titre, j'ai continué à me former en développant quelques applications mobiles et web que vous pouvez d'ores et déjà voir dans la rubrique projet."}
+                {"Ma gestion de projet efficace garantit que le travail est effectué dans les délais et dans les limites du budget. En bref, si vous cherchez un développeur qui est tout autant axé sur la qualité du produit que sur la satisfaction du client, vous êtes au bon endroit."}
               </p>
             </div>
           </div>
